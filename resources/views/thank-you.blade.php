@@ -54,7 +54,7 @@
                 </div>
                 <div class="bs_requests">
                     <button><a href="/">Go back to the homepage</a></button> 
-                    <button><a href="/bible-study-request-form">Request a Bible Study</a></button>
+                    <button><a href="/bible-study-requests">View the list</a></button>
                 </div>
             </div>
         </div>

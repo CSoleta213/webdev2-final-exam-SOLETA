@@ -34,7 +34,7 @@
                 margin-top: 20px;
             }
 
-            table, td {
+            table, th, td {
                 border: 1px solid black;
                 border-collapse: collapse;
                 text-align: center;
@@ -50,15 +50,15 @@
                     <div class="p-6">
                         <table>
                             <tr>
-                                <td>id</td>
-                                <td>Complete Name</td>
-                                <td>Email Address</td>
-                                <td>Contact Number</td>
-                                <td>Birthdate</td>
-                                <td>Religious Affiliation</td>
-                                <td>Bible Study Date</td>
-                                <td>Bible Study Time</td>
-                                <td>Bible Study Location / Address</td>
+                                <th>ID</th>
+                                <th>Complete Name</th>
+                                <th>Email Address</th>
+                                <th>Contact Number</th>
+                                <th>Birthdate</th>
+                                <th>Religious Affiliation</th>
+                                <th>Bible Study Date</th>
+                                <th>Bible Study Time</th>
+                                <th>Bible Study Location / Address</th>
                             </tr>
                             @foreach($bs_requests as $bs_request)
                                 <tr>

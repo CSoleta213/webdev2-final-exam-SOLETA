@@ -23,7 +23,7 @@
                 text-align: center;
             }
 
-            #form input {
+            #form input, #form select {
                 border: 1px solid black;
                 padding: 5px;
                 width: 100%;
@@ -57,15 +57,15 @@
                             <table>
                                 <tr>
                                     <td>Complete Name:</td>
-                                    <td><input type="text" name="complete_name" id="complete_name" required></td>
+                                    <td><input type="text" name="complete_name" id="complete_name" placeholder="First Name M.I. Last Name" required></td>
                                 </tr>
                                 <tr>
                                     <td>Email Address</td>
-                                    <td><input type="email" name="email_add" id="email_add" required></td>
+                                    <td><input type="email" name="email_add" id="email_add" placeholder="your_name@example.com" required></td>
                                 </tr>
                                 <tr>
                                     <td>Contact Number:</td>
-                                    <td><input type="tel" name="contact_number" id="contact_number" required></td>
+                                    <td><input type="tel" name="contact_number" id="contact_number" placeholder="0912-345-6789" pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}" required></td>
                                 </tr>
                                 <tr>
                                     <td>Birthdate:</td>
@@ -73,7 +73,16 @@
                                 </tr>
                                 <tr>
                                     <td>Religious Affiliation:</td>
-                                    <td><input type="text" name="religious_affiliation" id="religious_affiliation" required></td>
+                                    <td>
+                                        <select name="religious_affiliation" id="religious_affiliation">
+                                            <option value="mcgi">MCGI</option>
+                                            <option value="catholic">Catholic</option>
+                                            <option value="born again">Born Again</option>
+                                            <option value="inc">INC</option>
+                                            <option value="seventh-day adventist">Seventh-Day Adventist</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td>Bible Study Date:</td>
@@ -85,7 +94,7 @@
                                 </tr>
                                 <tr>
                                     <td>Bible Study Location / Address:</td>
-                                    <td><input type="text" name="bs_location" id="bs_location" required></td>
+                                    <td><input type="text" name="bs_location" id="bs_location" placeholder="Where do you want to do the Bible Study?" required></td>
                                 </tr>
                                 <tr id="button">
                                     <td colspan="2"><button type="submit">SUBMIT</button></td>

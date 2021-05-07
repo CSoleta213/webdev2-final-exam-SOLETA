@@ -19,7 +19,7 @@ class CreateBsRequestsTable extends Migration
             $table->string('email_add')->unique();
             $table->string('contact_number');
             $table->date('birthdate');
-            $table->string('religious_affiliation');
+            $table->set('religious_affiliation', ['MCGI', 'Catholic', 'Born Again', 'INC', 'Seventh-Day Adventist', 'Other']);
             $table->date('bs_date');
             $table->time('bs_time');
             $table->string('bs_location');
